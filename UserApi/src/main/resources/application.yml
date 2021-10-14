@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.15.154.43:3306/salary?useUnicode=true&charaterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: Wcl1967016918
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  redis:
+    host: 1.15.154.43
+    port: 6379
+    password: Wcl1967016918
+  session:
+    store-type: redis
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/, file:/home/img
+settings:
+  url: http://182.61.26.84/salary/
